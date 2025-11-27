@@ -14,7 +14,7 @@ bot = AsyncTeleBot(os.environ["TELEGRAMM_TOKEN"])
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 async def send_welcome(message):
-    text = 'Hi, I am EchoBot.\nJust write me something and I will repeat it!'
+    text = 'Привет, я Эхобот.\nПросто напишите мне что-нибудь, и я это повторю!'
     await bot.reply_to(message, text)
 
 
